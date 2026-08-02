@@ -9,14 +9,20 @@ did it. Most of what I've learned came from the second half of that sentence.
 
 ### What I run
 
-**A multi-agent operating discipline.** Sixty model processes can execute against one task
-queue with no coordinator in the middle. Agents claim work by atomic rename, report against
-receipts, and the gates are mechanical rather than honor-system — a rule that lives in
-whoever remembers it decays, so none of them do.
+**A multi-agent operating discipline.** Model processes execute against one task queue with
+no coordinator in the middle. Agents claim work by atomic rename, report against receipts,
+and the gates are mechanical rather than honor-system — a rule that lives in whoever
+remembers it decays, so none of them do.
+
+The measured working point is forty concurrent agents across two model families, scaled
+there without interrupting a single running task. The ceiling is memory, not CPU: 153 MB per
+agent against four cores sitting 78% idle, because the load was API-bound waiting rather
+than work.
 
 The parts worth reading on their own are extracted here:
 **[`agent-fleet`](https://github.com/yagizkaterli/agent-fleet)** — fleet runner, lease
-daemon, atomic claim, Monte Carlo simulation. Go, no dependencies, ~3.7k lines.
+daemon, atomic claim, refutation-card generator. Go, no dependencies, 4.3k lines of
+implementation and 2.3k of tests.
 
 **[LOBI](https://lobi.tech)** — a workspace for thinking with AI in a group. Your teammates
 think in their own AI sessions; nothing enters yours without your hand. Next.js, TypeScript,
