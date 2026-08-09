@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" width="100%" role="img" aria-labelledby="profile-i1-title profile-i1-desc">
+  <title id="profile-i1-title">Claim to evidence to receipt</title>
+  <desc id="profile-i1-desc">A measured claim becomes evidence and an auditable receipt. Normal mode animates the proof path; reduced motion keeps the complete proof frame still.</desc>
+  <style>
+    :root {
+      --canon-ease: cubic-bezier(.22, 1, .36, 1);
+      --duration-120: 120ms;
+      --duration-140: 140ms;
+      --duration-150: 150ms;
+      --duration-180: 180ms;
+      --duration-260: 260ms;
+      --duration-420: 420ms;
+      --duration-620: 620ms;
+    }
+
+    .bg { fill:#07111a; }
+    .grid { fill:none; stroke:#1a2b3a; stroke-width:1; }
+    .label { fill:#dbe6ee; font:600 13px ui-monospace,SFMono-Regular,Menlo,monospace; letter-spacing:.1em; }
+    .micro { fill:#8b9aaa; font:11px ui-monospace,SFMono-Regular,Menlo,monospace; letter-spacing:.05em; }
+    .node { fill:#0b1a28; stroke:#30475a; stroke-width:1.5; }
+    .node-hot { fill:#0d2230; stroke:#42d7cd; stroke-width:2; }
+    .line { fill:none; stroke:#375064; stroke-width:2; }
+    .line-hot { fill:none; stroke:#42d7cd; stroke-width:2.5; }
+    .proof { fill:#42d7cd; }
+    .receipt { fill:#0c1b29; stroke:#375064; stroke-width:1.5; }
+    .receipt-rule { stroke:#375064; stroke-width:1; }
+
+    /* KATALOG.json canon: one readable ease and the locked 120-620ms ladder. */
+    .motion-frame {
+      animation:i1-frame var(--duration-420) var(--canon-ease) both;
+      transform-box:fill-box;
+      transform-origin:center;
+    }
+    .connector {
+      transform-box:fill-box;
+      transform-origin:left center;
+    }
+    .connector-a { animation:i1-draw var(--duration-260) var(--canon-ease) 120ms both; }
+    .connector-b { animation:i1-draw var(--duration-180) var(--canon-ease) 260ms both; }
+    .scan {
+      transform-box:fill-box;
+      transform-origin:center;
+      animation:i1-scan var(--duration-620) var(--canon-ease) both;
+    }
+    .probe {
+      transform-box:fill-box;
+      transform-origin:center;
+      animation:i1-probe var(--duration-150) var(--canon-ease) 420ms 2 alternate both;
+    }
+    .rule {
+      transform-box:fill-box;
+      transform-origin:left center;
+      animation:i1-rule var(--duration-140) var(--canon-ease) 620ms both;
+    }
+    .tick {
+      transform-box:fill-box;
+      transform-origin:center;
+      animation:i1-tick var(--duration-120) linear 2 alternate both;
+    }
+
+    @keyframes i1-frame {
+      from { opacity:.18; transform:translateY(8px) scale(.965); }
+      to { opacity:1; transform:translateY(0) scale(1); }
+    }
+    @keyframes i1-draw {
+      from { opacity:.2; transform:scaleX(.08); }
+      to { opacity:1; transform:scaleX(1); }
+    }
+    @keyframes i1-scan {
+      from { transform:rotate(-28deg); opacity:.45; }
+      to { transform:rotate(332deg); opacity:1; }
+    }
+    @keyframes i1-probe {
+      from { opacity:.35; transform:scale(.72); }
+      to { opacity:1; transform:scale(1.28); }
+    }
+    @keyframes i1-rule {
+      from { opacity:.2; transform:scaleX(.35); }
+      to { opacity:1; transform:scaleX(1); }
+    }
+    @keyframes i1-tick {
+      from { opacity:.35; transform:scale(.75); }
+      to { opacity:1; transform:scale(1.2); }
+    }
+
+    .static-layer { display:none; }
+    .reduce-note { display:none; }
+
+    @media (prefers-color-scheme: light) {
+      .bg { fill:#f5f7fa; }
+      .grid { stroke:#dce3ea; }
+      .node { fill:#eef3f8; stroke:#b6c4d0; }
+      .node-hot { fill:#e8f7f5; stroke:#167f7b; }
+      .line { stroke:#9aafbf; }
+      .line-hot { stroke:#167f7b; }
+      .proof { fill:#167f7b; }
+      .micro { fill:#607080; }
+      .receipt { fill:#f9fbfc; stroke:#b6c4d0; }
+      .receipt-rule { stroke:#b6c4d0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .motion-layer, .motion-layer * { animation:none !important; }
+      .motion-layer { display:none; }
+      .static-layer { display:block; }
+      .reduce-note { display:block; }
+    }
+  </style>
+
+  <rect class="bg" x="0" y="0" width="960" height="280" rx="18"/>
+  <path class="grid" d="M28 54H932 M28 236H932"/>
+  <text x="32" y="34" class="micro">PROFILE / EVIDENCE FIRST</text>
+  <text x="928" y="34" text-anchor="end" class="micro">CLAIM -&gt; MEASURE -&gt; RECEIPT</text>
+
+  <g class="motion-layer" aria-hidden="true">
+    <g class="motion-frame">
+      <rect class="node" x="38" y="92" width="190" height="92" rx="12"/>
+      <text x="133" y="132" text-anchor="middle" class="label">CLAIM</text>
+      <text x="133" y="156" text-anchor="middle" class="micro">named and testable</text>
+    </g>
+
+    <g>
+      <path class="line" d="M228 138H320"/>
+      <path class="line-hot connector connector-a" d="M248 138H320"/>
+      <circle class="proof tick" cx="282" cy="138" r="4"/>
+    </g>
+
+    <g class="motion-frame">
+      <circle class="node-hot" cx="480" cy="138" r="66"/>
+      <circle class="line scan" cx="480" cy="138" r="50"/>
+      <circle class="line" cx="480" cy="138" r="32"/>
+      <circle class="proof" cx="480" cy="138" r="10"/>
+      <path class="line-hot" d="M480 62V214 M404 138H556"/>
+      <circle class="proof probe" cx="480" cy="72" r="5"/>
+      <text x="480" y="134" text-anchor="middle" class="label">MEASURE</text>
+      <text x="480" y="155" text-anchor="middle" class="micro">run it here</text>
+    </g>
+
+    <g>
+      <path class="line" d="M546 138H638"/>
+      <path class="line-hot connector connector-b" d="M546 138H638"/>
+      <circle class="proof tick" cx="602" cy="138" r="4"/>
+    </g>
+
+    <g class="motion-frame">
+      <rect class="receipt" x="638" y="82" width="282" height="112" rx="12"/>
+      <text x="660" y="113" class="label">RECEIPT</text>
+      <text x="896" y="113" text-anchor="end" class="micro">OPEN TO AUDIT</text>
+      <path class="receipt-rule rule" d="M660 127H896"/>
+      <text x="660" y="151" class="micro">source</text>
+      <text x="824" y="151" class="micro">named</text>
+      <circle class="proof" cx="886" cy="147" r="4"/>
+      <text x="660" y="174" class="micro">result</text>
+      <text x="824" y="174" class="micro">measured</text>
+      <circle class="proof" cx="886" cy="170" r="4"/>
+    </g>
+  </g>
+
+  <g class="static-layer" aria-hidden="true">
+    <g>
+      <rect class="node" x="38" y="92" width="190" height="92" rx="12"/>
+      <text x="133" y="132" text-anchor="middle" class="label">CLAIM</text>
+      <text x="133" y="156" text-anchor="middle" class="micro">named and testable</text>
+    </g>
+    <path class="line-hot" d="M228 138H320"/>
+    <circle class="proof" cx="282" cy="138" r="4"/>
+    <g>
+      <circle class="node-hot" cx="480" cy="138" r="66"/>
+      <circle class="line" cx="480" cy="138" r="50"/>
+      <circle class="line" cx="480" cy="138" r="32"/>
+      <circle class="proof" cx="480" cy="138" r="10"/>
+      <path class="line-hot" d="M480 62V214 M404 138H556"/>
+      <circle class="proof" cx="480" cy="72" r="5"/>
+      <text x="480" y="134" text-anchor="middle" class="label">MEASURE</text>
+      <text x="480" y="155" text-anchor="middle" class="micro">run it here</text>
+    </g>
+    <path class="line-hot" d="M546 138H638"/>
+    <circle class="proof" cx="602" cy="138" r="4"/>
+    <g>
+      <rect class="receipt" x="638" y="82" width="282" height="112" rx="12"/>
+      <text x="660" y="113" class="label">RECEIPT</text>
+      <text x="896" y="113" text-anchor="end" class="micro">STATIC PROOF</text>
+      <path class="receipt-rule" d="M660 127H896"/>
+      <text x="660" y="151" class="micro">source</text>
+      <text x="824" y="151" class="micro">named</text>
+      <circle class="proof" cx="886" cy="147" r="4"/>
+      <text x="660" y="174" class="micro">result</text>
+      <text x="824" y="174" class="micro">measured</text>
+      <circle class="proof" cx="886" cy="170" r="4"/>
+    </g>
+  </g>
+
+  <text x="32" y="258" class="micro">the work is the evidence</text>
+  <text x="32" y="258" class="micro reduce-note">reduced motion: complete proof frame</text>
+</svg>
