@@ -38,7 +38,7 @@ Portable working discipline, extracted as public skills:
 - [frictionless](https://github.com/yagizkaterli/frictionless)
 - [human-steps](https://github.com/yagizkaterli/human-steps)
 - [perfect-form](https://github.com/yagizkaterli/perfect-form)
-- `idea-boost` *(Private snapshot; access on request.)*
+- [idea-boost](https://github.com/yagizkaterli/idea-boost)
 
 ### Working with
 
