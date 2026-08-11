@@ -18,8 +18,8 @@ who did not write the claim.
 
 | project | one honest line |
 |---|---|
-| **[lobby](https://github.com/yagizkaterli/lobby)** | An asynchronous workspace for thinking with AI. *(Private snapshot; access on request.)* |
-| **[agent-fleet](https://github.com/yagizkaterli/agent-fleet)** | Infrastructure for running many AI agents in parallel and measuring whether the work happened. *(Private snapshot; access on request.)* |
+| **lobby** | An asynchronous workspace for thinking with AI. *(Private snapshot; access on request.)* |
+| **agent-fleet** | Infrastructure for running many AI agents in parallel and measuring whether the work happened. *(Private snapshot; access on request.)* |
 | **[herakles-eval-lab](https://github.com/yagizkaterli/herakles-eval-lab)** | An evaluation harness for separating real completion from polished fake completion. *(Public evaluation snapshot.)* |
 
 ### Measured snapshots
