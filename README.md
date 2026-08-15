@@ -20,7 +20,7 @@ who did not write the claim.
 |---|---|
 | **lobby** | An asynchronous workspace for thinking with AI. *(Private snapshot; access on request.)* |
 | **agent-fleet** | Infrastructure for running many AI agents in parallel and measuring whether the work happened. *(Private snapshot; access on request.)* |
-| **[herakles-eval-lab](https://github.com/yagizkaterli/herakles-eval-lab)** | An evaluation harness for separating real completion from polished fake completion. *(Public evaluation snapshot.)* |
+| **herakles-eval-lab** | An evaluation harness for separating real completion from polished fake completion. *(Private snapshot; access on request.)* |
 
 ### Measured snapshots
 
@@ -39,6 +39,7 @@ Portable working discipline, extracted as public skills:
 - [human-steps](https://github.com/yagizkaterli/human-steps)
 - [perfect-form](https://github.com/yagizkaterli/perfect-form)
 - [idea-boost](https://github.com/yagizkaterli/idea-boost)
+- [tahmin](https://github.com/yagizkaterli/tahmin)
 
 ### Working with
 
