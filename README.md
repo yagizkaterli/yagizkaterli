@@ -24,11 +24,16 @@ who did not write the claim.
 
 ### Measured snapshots
 
-Local measurements from 2026-08-09:
+Local measurements from 2026-08-17. Each figure names the branch it counts, because
+these repositories carry more than one and the numbers differ between them.
 
-- `lobby`: 167 commits, 45 tracked TypeScript files at `HEAD 5cdd95c`.
-- `agent-fleet`: 4,286 implementation Go lines, 2,455 test Go lines, 47 test functions at `HEAD 6906c83`.
-- `herakles-eval-lab`: 16 commits, 20 Python files, 4 golden files at `HEAD cd038c9`.
+- `lobby`: 123 commits, 26 tracked TypeScript files on `main` at `HEAD aef95f3`.
+  The `master` branch carries a wider tree — 194 commits, 96 files — and earlier
+  revisions of this page quoted it without saying so.
+- `agent-fleet`: 4,286 implementation Go lines, 2,455 test Go lines, 47 test
+  functions on `master` at `HEAD 6906e83`.
+- `herakles-eval-lab`: 19 commits, 20 Python files, 4 golden files on `master` at
+  `HEAD 457b1ab`.
 
 ### Method
 
