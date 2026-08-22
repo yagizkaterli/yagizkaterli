@@ -16,23 +16,12 @@ who did not write the claim.
 
 ### Projects
 
-### HERAKLES Film Factory
-
-The first public pilot: real system traces translated into deterministic 3D scenes with receipts.
-
-<p align="center">
-  <a href="https://github.com/yagizkaterli/herakles-film-factory">
-    <img src="./herakles-film-preview.gif" width="100%" alt="HERAKLES Film Factory 3D preview" />
-  </a>
-</p>
-
-[Open the film factory](https://github.com/yagizkaterli/herakles-film-factory) · [P01 Evidence Terrain](https://github.com/yagizkaterli/herakles-film-factory/blob/master/showcase/films/evidence-terrain-pilot-3d.mp4) · [P02 EON Camera Journey](https://github.com/yagizkaterli/herakles-film-factory/blob/master/showcase/films/eon-camera-journey-pilot-3d.mp4)
-
 | project | one honest line |
 |---|---|
 | **lobby** | An asynchronous workspace for thinking with AI. *(Private snapshot; access on request.)* |
 | **agent-fleet** | Infrastructure for running many AI agents in parallel and measuring whether the work happened. *(Private snapshot; access on request.)* |
 | **herakles-eval-lab** | An evaluation harness for separating real completion from polished fake completion. *(Private snapshot; access on request.)* |
+| **HERAKLES Film Factory** | Turns source-bound system traces into deterministic 3D films with receipts. [Open the project](https://github.com/yagizkaterli/herakles-film-factory). |
 
 ### Measured snapshots
 
