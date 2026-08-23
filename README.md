@@ -25,9 +25,9 @@ who did not write the claim.
 
 #### Latest film artifact
 
-![Does S6 admit a complex structure? Yup.](./s6-explainer-v2-preview.gif)
+![Can S6 carry a complex structure?](./s6-phrasing-v3-preview.gif)
 
-**Does S⁶ admit a complex structure? Yup.** — QA-revised mathematical film with explicit legend, torus-to-hexagon morph, π₁ substitution, and visible S⁶ closure. [Open the MP4](./s6-explainer-v2.mp4) · [Open the film factory](https://github.com/yagizkaterli/herakles-film-factory).
+**Can S⁶ carry a complex structure?** — v3 starts with the family, names the special points, pauses at the cusp, then shows the dP6 degeneration before the conclusion. [Open the MP4](./s6-phrasing-v3.mp4) · [Open the film factory](https://github.com/yagizkaterli/herakles-film-factory).
 
 ### Measured snapshots
 
