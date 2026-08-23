@@ -25,9 +25,9 @@ who did not write the claim.
 
 #### Latest film artifact
 
-![Measured Health Surface](./nobet-health-surface-2047-preview.gif)
+![Does S6 admit a complex structure? Yup.](./s6-explainer-long-preview.gif)
 
-**Measured Health Surface** — the current HERAKLES film: measured failures and false-green states become a visible system landscape. [Open the MP4](./nobet-health-surface-2047.mp4) · [Open the film factory](https://github.com/yagizkaterli/herakles-film-factory).
+**Does S⁶ admit a complex structure? Yup.** — a 14-second mathematical film: torus family, 3/4/∞ points, cusp degeneration, hexagonal dP6, and S⁶ closure. [Open the MP4](./s6-explainer-long.mp4) · [Open the film factory](https://github.com/yagizkaterli/herakles-film-factory).
 
 ### Measured snapshots
 
