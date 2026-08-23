@@ -25,9 +25,9 @@ who did not write the claim.
 
 #### Latest film artifact
 
-![One counterexample breaks the surface](./anlati-counterexample-poster.png)
+![The Label Said Running — v2](./anlati-label-vs-stream-v2-preview.gif)
 
-**One counterexample breaks the surface** — the first Anlatı Grammar film, built from the `d-MAT-007` and `d-KARA-S0-01` receipts. [Open the scene and receipt](https://github.com/yagizkaterli/herakles-film-factory/tree/master/showcase/films).
+**The Label Said Running — v2** — the current Anlatı Grammar film: a measured stream contradicts a status label. [Open the MP4](./anlati-label-vs-stream-v2.mp4) · [Open the film factory receipt](https://github.com/yagizkaterli/herakles-film-factory/tree/master/showcase/films).
 
 ### Measured snapshots
 
