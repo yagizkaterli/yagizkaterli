@@ -25,9 +25,9 @@ who did not write the claim.
 
 #### Latest film artifact
 
-![The Label Said Running — v2](./anlati-label-vs-stream-v2-preview.gif)
+![Measured Health Surface](./nobet-health-surface-2047-preview.gif)
 
-**The Label Said Running — v2** — the current Anlatı Grammar film: a measured stream contradicts a status label. [Open the MP4](./anlati-label-vs-stream-v2.mp4) · [Open the film factory receipt](https://github.com/yagizkaterli/herakles-film-factory/tree/master/showcase/films).
+**Measured Health Surface** — the current HERAKLES film: measured failures and false-green states become a visible system landscape. [Open the MP4](./nobet-health-surface-2047.mp4) · [Open the film factory](https://github.com/yagizkaterli/herakles-film-factory).
 
 ### Measured snapshots
 
