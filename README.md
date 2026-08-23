@@ -23,6 +23,12 @@ who did not write the claim.
 | **herakles-eval-lab** | An evaluation harness for separating real completion from polished fake completion. *(Private snapshot; access on request.)* |
 | **HERAKLES Film Factory** | Turns source-bound system traces into deterministic 3D films with receipts. [Open the project](https://github.com/yagizkaterli/herakles-film-factory). |
 
+#### Latest film artifact
+
+![One counterexample breaks the surface](./anlati-counterexample-poster.png)
+
+**One counterexample breaks the surface** — the first Anlatı Grammar film, built from the `d-MAT-007` and `d-KARA-S0-01` receipts. [Open the scene and receipt](https://github.com/yagizkaterli/herakles-film-factory/tree/master/showcase/films).
+
 ### Measured snapshots
 
 Local measurements from 2026-08-17. Each figure names the branch it counts, because
