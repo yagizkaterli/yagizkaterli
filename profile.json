@@ -1,0 +1,7 @@
+{
+  "schema":"public-profile-v1",
+  "person":{"name":"Yağız Katerli","alternate_names":["Yagiz Katerli","Kamil Yagiz Katerli"],"role":"AI agents and evaluation infrastructure engineer","education":"Mathematical Engineering, Istanbul Technical University","location":"Istanbul, Türkiye","same_as":["https://www.linkedin.com/in/yagizkaterli","https://github.com/yagizkaterli"]},
+  "projects":[{"name":"LOBI","description":"Provider-neutral coordination layer for AI agent rooms, context capsules and receipt-backed work.","status":"design and prototype"},{"name":"Agentic Revolution","description":"Public framing for bounded agent planning, tool use, orchestration and verification.","status":"concept and research"},{"name":"HERAKLES Film Factory","url":"https://github.com/yagizkaterli/herakles-film-factory","description":"Source-bound system traces rendered as reproducible films with receipts."}],
+  "claim_policy":"Only source-backed or measured claims are presented as facts; unknowns remain unknown.",
+  "contact":"https://www.linkedin.com/in/yagizkaterli"
+}

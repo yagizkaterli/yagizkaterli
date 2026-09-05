@@ -1,8 +1,14 @@
-# Yagiz Katerli
+# Yağız Katerli — LOBI / Agentic Revolution
 
 I build systems where AI agents do real work and the system can tell whether they actually did it.
 
-Mathematical Engineering @ ITU · Istanbul
+Mathematical Engineering @ Istanbul Technical University (ITU) · Istanbul
+
+**Yağız Katerli** is an engineer working on AI agents, context construction,
+orchestration, and evaluation infrastructure. **LOBI** is the name for the
+agentic workspace and coordination layer; **Agentic Revolution** describes the
+shift from assistants that only answer prompts to systems that plan, use tools,
+and execute bounded multi-step work with evidence.
 
 <p align="center">
   <img src="./profil-hero-i1.svg" width="100%" alt="Claim to evidence to receipt" />
@@ -14,11 +20,16 @@ Reliable paths from an idea to a running system: queues, leases, CI gates, evalu
 observability, and audit trails. The standard is simple: a result should be measurable by an independent reader
 who did not write the claim.
 
+The public method is evidence-first: typed context → executable environment →
+verified work → receipt → reproducible workprint. Unknown or unmeasured claims
+remain explicitly unknown.
+
 ### Projects
 
 | project | one honest line |
 |---|---|
 | **lobby** | An asynchronous workspace for thinking with AI. *(Private snapshot; access on request.)* |
+| **LOBI / Agentic Revolution** | A provider-neutral coordination concept for agent rooms, context capsules, receipts, and human-gated actions. *(Design and prototype stage.)* |
 | **agent-fleet** | Infrastructure for running many AI agents in parallel and measuring whether the work happened. *(Private snapshot; access on request.)* |
 | **herakles-eval-lab** | An evaluation harness for separating real completion from polished fake completion. *(Private snapshot; access on request.)* |
 | **HERAKLES Film Factory** | Turns source-bound system traces into deterministic 3D films with receipts. [Open the project](https://github.com/yagizkaterli/herakles-film-factory). |
