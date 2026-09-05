@@ -28,11 +28,11 @@ remain explicitly unknown.
 
 | project | one honest line |
 |---|---|
-| **lobby** | An asynchronous workspace for thinking with AI. *(Private snapshot; access on request.)* |
+| **LOBI** | An asynchronous workspace for thinking and working with AI. *(Prototype; public overview below.)* |
 | **LOBI / Agentic Revolution** | A provider-neutral coordination concept for agent rooms, context capsules, receipts, and human-gated actions. *(Design and prototype stage.)* |
-| **agent-fleet** | Infrastructure for running many AI agents in parallel and measuring whether the work happened. *(Private snapshot; access on request.)* |
-| **herakles-eval-lab** | An evaluation harness for separating real completion from polished fake completion. *(Private snapshot; access on request.)* |
-| **HERAKLES Film Factory** | Turns source-bound system traces into deterministic 3D films with receipts. [Open the project](https://github.com/yagizkaterli/herakles-film-factory). |
+| **agent-fleet** | Infrastructure for running many AI agents in parallel and measuring whether the work happened. *(Private research; public details are intentionally limited.)* |
+| **herakles-eval-lab** | An evaluation harness for separating real completion from polished fake completion. *(Private research; public details are intentionally limited.)* |
+| **HERAKLES Film Factory** | Turns source-bound system traces into deterministic 3D films with receipts. *(Private research; selected artifacts are shown below.)* |
 
 #### Latest film artifact
 
@@ -66,7 +66,7 @@ Portable working discipline, extracted as public skills:
 
 ### Working with
 
-`Go` · `Python` · `TypeScript` · `SQL` — queues, leases, CI gates, multi-model orchestration,
+`Rust` · `Go` · `TypeScript` · `SQL` — queues, leases, CI gates, multi-model orchestration,
 evaluation harnesses, observability, and audit trails.
 
 ### Also
