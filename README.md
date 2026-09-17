@@ -1,72 +1,59 @@
 # Yağız Katerli
 
-**Building agent systems that have to prove the work happened.**
+**Building infrastructure for long-running autonomous agent systems.**
 
 Mathematical Engineering @ Istanbul Technical University · Istanbul
 
-I work on autonomous agent infrastructure, evaluation, formal verification, and operator tooling. The recurring problem is simple to state and hard to enforce:
+I build persistent-agent infrastructure, evaluation systems, formal gates, provenance, runtime observability, and operator tooling.
 
-> **When an agent says it delivered something, what evidence is sufficient to believe it?**
+Most of HERAKLES changes faster than a profile page can describe faithfully. This page therefore points to concrete public artifacts instead of publishing internal benchmark procedures or transient system counts.
 
-My current work treats that as an engineering problem rather than a prompting problem: claims are bound to artifacts, receipts, runtime observations, falsifiers, and — where the property is actually formal — Lean proofs.
+## HERAKLES
 
-## Current research
+HERAKLES is my main experimental system for long-running autonomous agents and the infrastructure around them: execution, coordination, context recovery, receipts, evaluation, formal verification boundaries, runtime observation, and operator surfaces.
 
-### CapsuleBench — proof of delivery for autonomous agents
+Public surfaces:
 
-The core object is an evidence chain:
+- [agent-fleet](https://github.com/yagizkaterli/agent-fleet) — execution and evidence-bound delivery infrastructure.
+- [herakles-harness-os](https://github.com/yagizkaterli/herakles-harness-os) — an extracted harness surface.
+- [herakles-film-factory](https://github.com/yagizkaterli/herakles-film-factory) — deterministic films with source/render receipts.
 
-```text
-claim -> evidence -> binding -> falsifier -> verdict
-```
+The live system is broader than any one public repository.
 
-I use it to study failure modes that ordinary "task completed" evaluation misses: stale artifacts, wrong run identity, measurement-vs-success confusion, locally correct measurements taken from the wrong system layer, verifier bugs, and cases where an agent updates its belief but not its behavior.
+## Film Factory
 
-The goal is not to make agents sound more certain. It is to make unsupported certainty expensive.
+[HERAKLES Film Factory](https://github.com/yagizkaterli/herakles-film-factory) turns selected system material into short deterministic visual explanations. The animation is presentation; the repository keeps the source and receipt beside it.
 
-### LeanPy — proof-carrying agent computation
+[![HERAKLES Film Factory](https://raw.githubusercontent.com/yagizkaterli/herakles-film-factory/master/docs/media/hero.gif)](https://github.com/yagizkaterli/herakles-film-factory)
 
-A Python program or agent computes a candidate. Lean checks a critical property of the **concrete result** before that result is admitted into a trusted path.
+**[Open the latest film pointer](https://github.com/yagizkaterli/herakles-film-factory/blob/master/showcase/latest-film.json)** · **[Browse the film showcase](https://github.com/yagizkaterli/herakles-film-factory/tree/master/showcase)**
 
-```text
-live state -> Python / agent -> candidate + witness -> Lean gate -> accept / reject -> action
-```
+## LeanPy
 
-This is deliberately narrower than "formally verified Python": the proof has to be bound to the exact input, candidate, contract and verifier result. `PROOF != BINDING`, and a type-checking theorem is not automatically evidence about a live system.
+Experimental work at the boundary between agent/Python computation and Lean 4. The narrow goal is to machine-check critical properties of concrete outputs before they cross selected trust boundaries.
 
-Current implementation work lives in a private research repository while the interface and enforcement boundary are still moving.
+This is not a claim that Python itself is formally verified. The active implementation is still evolving.
 
-### Herakles
+## Agent evaluation
 
-Herakles is the larger experimental system around these ideas: persistent agents, parallel execution, context recovery, receipts, evaluation, formal gates, runtime observation, and operator surfaces.
+I am building evaluation infrastructure for autonomous systems: whether reported work corresponds to the artifact, execution, and runtime state it refers to. The active benchmark procedure stays out of the profile while it is under development.
 
-A small public skeleton of the current harness direction is in [herakles-harness-os](https://github.com/yagizkaterli/herakles-harness-os). The active system is broader than that repository, so I do not treat the public skeleton as a complete representation of the live system.
+## Selected public work
 
-## What I care about
-
-- **Verification over consensus.** More agents repeating a claim does not make it true.
-- **Evidence identity.** A receipt has to refer to the exact artifact/run it claims to verify.
-- **Fail-closed boundaries.** Unknown, stale, unmeasured, or mismatched evidence should not silently become green.
-- **Verifier accountability.** A failing verifier can itself be wrong; the verifier needs falsifiers too.
-- **Context recovery.** In long-lived agent systems, finding the authoritative current system layer is part of the task.
-- **Human-verifiable compression.** Large execution histories should compress into small evidence graphs without compressing away accountability.
-
-## Public work
-
-| repository | what it is |
+| repository | focus |
 |---|---|
-| [herakles-harness-os](https://github.com/yagizkaterli/herakles-harness-os) | early public skeleton for a single Herakles harness surface with mechanical / Lean-provable acceptance |
-| [chess-tui](https://github.com/yagizkaterli/chess-tui) | terminal chess work |
-| [treehouse](https://github.com/yagizkaterli/treehouse) | public systems work / experiments |
+| [agent-fleet](https://github.com/yagizkaterli/agent-fleet) | agent execution and delivery infrastructure |
+| [herakles-harness-os](https://github.com/yagizkaterli/herakles-harness-os) | public HERAKLES harness experiments |
+| [herakles-film-factory](https://github.com/yagizkaterli/herakles-film-factory) | deterministic films, source bindings, render receipts |
 | [foundation](https://github.com/yagizkaterli/foundation) · [frictionless](https://github.com/yagizkaterli/frictionless) · [human-steps](https://github.com/yagizkaterli/human-steps) · [perfect-form](https://github.com/yagizkaterli/perfect-form) · [idea-boost](https://github.com/yagizkaterli/idea-boost) · [tahmin](https://github.com/yagizkaterli/tahmin) | small extracted methods / skills |
 
-Some of the most active repositories — including the current agent-fleet, LeanPy and evaluation work — are private while their contracts are changing quickly. I would rather expose a smaller claim than a larger one that cannot be independently checked.
+Forks and repositories I did not author stay out of this list even when I use or modify them inside the larger system.
 
-## Current engineering direction
+## Engineering
 
 `Go` · `Rust` · `Lean 4` · `Python` · `TypeScript`
 
-Agent orchestration · evaluation harnesses · proof-carrying decisions · terminal/operator tooling · provenance · receipts · context retrieval · CI gates · observability
+Autonomous agents · formal methods · evaluation harnesses · terminal/operator tooling · provenance · receipts · context retrieval · CI gates · observability · deterministic visualization
 
 ## Background
 
