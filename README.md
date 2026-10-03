@@ -1,8 +1,16 @@
 # Yağız Katerli
 
-Mathematical Engineering @ Istanbul Technical University · Istanbul
-
 I build software and experiments around autonomous agents, formal methods, developer tooling, and visualization.
+
+<p align="center">
+  <img src="./profil-hero-i1.svg" width="100%" alt="Claim to evidence to receipt" />
+</p>
+
+## Evaluation
+
+[herakles-eval-lab](https://github.com/yagizkaterli/herakles-eval-lab) is the evaluation surface for separating real completion from polished fake completion.
+
+Mathematical Engineering @ Istanbul Technical University · Istanbul
 
 ## Current repositories
 
