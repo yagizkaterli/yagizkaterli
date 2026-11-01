@@ -46,4 +46,4 @@ Forks and repositories I did not author are intentionally excluded from this pag
 
 I study Mathematical Engineering at Istanbul Technical University. Outside software: jazz drums, mathematics, film, and philosophy.
 
-📫 yagizkaterli@gmail.com · [LinkedIn](https://linkedin.com/in/yagizkaterli)
+📫 yagizkaterli@gmail.com · [LinkedIn](https://www.linkedin.com/in/yagizkaterli)
