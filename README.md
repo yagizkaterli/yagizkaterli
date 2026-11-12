@@ -1,7 +1,7 @@
-<h1 align="center">HERAKLES</h1>
+<h1 align="center">Yağız Katerli</h1>
 
-<p align="center"><b>Evidence-first multi-agent systems.</b><br/>
-A playable world, a codebase OS, and a distributed systems lab — built by a colony of agents.</p>
+<p align="center"><b>I build systems that prove what they claim.</b><br/>
+Playable simulations, coordination infrastructure for multi-agent work, and tools that make results checkable.</p>
 
 <p align="center">
 <img alt="Rust" src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" />
@@ -11,39 +11,37 @@ A playable world, a codebase OS, and a distributed systems lab — built by a co
 <img alt="k3s" src="https://img.shields.io/badge/k3s-FFC61C?style=flat-square&logo=k3s&logoColor=black" />
 </p>
 
-### Software should make its own claims checkable.
+### What I do
 
-Every work item is a **desired state** with measurable acceptance commands. Every delivery is a **receipt**: `ds_sha256`, a lease `fence_token`, and a result. Unproven work is reported as `OLCULEMEDI` — never as done. The source stays private where it needs to; the **event and the output are public and verifiable**.
+I design and build systems where every claim is checkable. A work item is a **desired state** with measured acceptance commands; a delivery is a **receipt** with a digest and a lease token; work that cannot be proven is reported as unmeasured, never as done. The interesting part is not the demo — it is the machinery that makes the demo trustworthy.
 
-### What you can verify today
+### Selected work
 
-| System | What it is | Public proof |
-|---|---|---|
-| **transformice3d** | Playable 3D surf game: deterministic core + Babylon.js scene | `node --test` **61/61**; Game IR `hrk-game-ir/v0` sha `18feab17…` |
-| **distributed-systems-lab** | Timeout/retry experiments: lost replies, request IDs, dedupe | `cargo run -- demo2` rc=0; experiment 02 JSON (counter 2 vs 1) |
-| **herakles-world-engine** | Deterministic world physics (IDM longitudinal model) | `cargo test -p world-v21 fizik` **5/5**; commit `219baeb` |
-| **lobi** | Desktop + API on an event-sourced, hash-chained room ledger | `lobid-native` events; room/turn model; D3 merge pending |
-| **firstmate** | GitHub visibility unit: README, metadata and evidence cadence | read-only plans; human-gated application |
+**Playable worlds**
+- **transformice3d** — a 3D surf game with a deterministic simulation core and a Babylon.js scene. Same seed, same result: `node --test` 61/61, and a game IR whose digest is `18feab17…` for seed 7.
+- **roadcase** — a browser driving game on a hand-rolled WebGL2 engine: no framework, no build step, changes gated by capsule checks.
 
-### Systems the colony is building
+**Distributed systems**
+- **distributed-systems-lab** — small experiments on failure: a lost reply, a client retry, and a duplicate effect. Without request IDs the counter reaches 2 and the invariant breaks; with an idempotency key it stays at 1. The result is recorded as JSON, not prose.
 
-**Agentic systems** — a `.kernel` microservice that holds each repo's write state machine (claim → verify → review → receipt, fenced and idempotent), an `ocak` production line with a fake-green gate (`kabul=0 && !merge → no production`), and **IDEA/REA** knowledge infrastructure: 14 simulations, 2.2k+ nodes, QRE prioritization.
+**Systems and infrastructure**
+- A **codebase control plane** for multi-agent work: leases with fencing tokens, a write state machine, idempotent receipts, and a runner that turns desired states into measured outcomes.
+- **Lobi** — a desktop app and API built on an event-sourced, hash-chained room ledger: proposals, turns and decisions survive restarts and can be replayed.
+- An **evidence archive**: a verified self-archive (207 works, 207/0 digest checks), a licensed open-access collection, a 32,441-document corpus, and a full-text index of 370k chunks.
 
-**Playable worlds** — **transformice3d** (Babylon.js, deterministic core) and **roadcase** (raw WebGL2 driving game, capsule-gated changes).
+**Film**
+- An **agentic film pipeline** with seven stages: research, selection, interpretation, storyboard, render, receipt, publish. The latest run produced a 15-second 720p film with a poster and a per-stage receipt chain.
 
-**Evidence infrastructure** — a desired-state runner with machine receipts; a self-archive (207 works verified 207/0), an open-access archive (15 licensed works), a 32,441-document corpus, and an FTS index of 370k chunks.
+### Principles
 
-**Film studio** — an agentic film pipeline: seven stages (research → selection → interpretation → storyboard → render → receipt → publish). Latest run produced a **15s 720p H.264 film** with poster and a per-stage receipt chain.
+1. **Measure, don't assert.** Every acceptance criterion is a command with an expected result.
+2. **One owner per task.** A lease carries a fencing token; stale owners are rejected.
+3. **Receipts, not promises.** No digest, no “done”.
+4. **Fail closed.** If a gate cannot be measured, work does not proceed.
+5. **Keep the source where it belongs; show the output.** Architecture, measurements, receipts and demos are public. Code is private where it needs to be.
 
-### What is private, and why
+### Private work
 
-Source code for most systems is **private**. What is public is the part that matters: the architecture, the measured outputs, the receipts, and the demonstrations. Access to private sources is available on request where there is a shared interest.
+Most production source is private. What is public is the part that lets you judge the work: architecture, measured outputs, receipts and demonstrations. Access to private sources is available on request for collaborators, shared-interest evaluation, or under NDA.
 
-### How the colony works
-
-- **Desired state** → measurable acceptance commands.
-- **Leases and fences** → one owner per task; stale owners are rejected.
-- **Receipts** → `ds_sha256` + `kira_token`; no receipt, no “done”.
-- **Knowledge** → findings shared between members; IDEA sims and REA analysis keep the map current.
-
-*Measured 2026-11-12. Every line above points to a receipt in the corresponding coordination tree.*
+*Measured 2026-11-12. Every number above points to a receipt or a reproducible command.*
