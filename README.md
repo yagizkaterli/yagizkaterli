@@ -1,49 +1,24 @@
-# Yağız Katerli
+# HERAKLES
 
-I build software and experiments around autonomous agents, formal methods, developer tooling, and visualization.
+Evidence-first multi-agent systems: a game, a codebase OS, and a distributed systems lab.
 
-<p align="center">
-  <img src="./profil-hero-i1.svg" width="100%" alt="Claim to evidence to receipt" />
-</p>
+## What you can run today
+| Repo | What it is | Proof |
+|---|---|---|
+| [transformice3d](https://github.com/yagizkaterli/transformice3d) | Playable 3D surf game: deterministic core + Babylon.js scene | `node --test` 61/61; Game IR `hrk-game-ir/v0` sha `18feab17…` |
+| [distributed-systems-lab](https://github.com/yagizkaterli/distributed-systems-lab) | Timeout/retry experiments: lost replies, request IDs, dedupe | `cargo run -- demo2` rc=0; experiment 02 JSON |
+| [herakles-scale](https://github.com/yagizkaterli/herakles-scale) | Rust system entry: `hrk` (leases, DS runner, ARE, audio), sindirim FTS | `cargo test` suites; machine receipts |
+| [herakles-world-engine](https://github.com/yagizkaterli/herakles-world-engine) | Deterministic world physics (IDM longitudinal model) | `cargo test -p world-v21 fizik` 5/5; commit `219baeb` |
+| [lobi](https://github.com/yagizkaterli/lobi) | Desktop + API on an event-sourced, hash-chained room ledger | `lobid-native` events; room/turn model |
+| [firstmate](https://github.com/yagizkaterli/firstmate) | GitHub visibility unit: README/metadata/evidence cadence | Reads-only plans + human-gated application |
 
-## Evaluation
+## How it works
+- **Desired state**: every work item is a `*.ds` file with measurable acceptance commands.
+- **Receipts**: `hrk is bitir` writes `ds_sha256` + `kira_token`; unproven work is `OLCULEMEDI`.
+- **Fences**: one lease owner per task (`fence_token`); stale owners are rejected.
+- **Knowledge**: IDEA sims + REA analysis; public where it can be shared.
 
-[herakles-eval-lab](https://github.com/yagizkaterli/herakles-eval-lab) is the evaluation surface for separating real completion from polished fake completion.
+## Status
+Measured on 2026-11-12. Machine gates: DS 0/5 baseline for GitHub visibility (closing), Lobi D3 merge pending, ACK capsule coverage 1.3%.
 
-Mathematical Engineering @ Istanbul Technical University · Istanbul
-
-## Current repositories
-
-### agent-fleet
-
-[agent-fleet](https://github.com/yagizkaterli/agent-fleet) is an active repository for agent-system experiments and tooling. For current behavior and implementation details, use the repository itself rather than this profile summary.
-
-### herakles-harness-os
-
-[herakles-harness-os](https://github.com/yagizkaterli/herakles-harness-os) is a public HERAKLES-related repository.
-
-### HERAKLES Film Factory
-
-[herakles-film-factory](https://github.com/yagizkaterli/herakles-film-factory) contains visualization experiments, scene code, GIF previews, MP4 artifacts, and JSON receipts.
-
-The repository currently contains experimental renders. I am not presenting any of them here as a finished HERAKLES film yet.
-
-### LeanPy
-
-LeanPy is ongoing experimental work involving Lean 4 and Python/agent-generated outputs. Claims about what is formally checked belong with the exact source, theorem, and run that support them rather than in a profile headline.
-
-## Small public experiments
-
-[foundation](https://github.com/yagizkaterli/foundation) · [frictionless](https://github.com/yagizkaterli/frictionless) · [human-steps](https://github.com/yagizkaterli/human-steps) · [perfect-form](https://github.com/yagizkaterli/perfect-form) · [idea-boost](https://github.com/yagizkaterli/idea-boost) · [tahmin](https://github.com/yagizkaterli/tahmin)
-
-Forks and repositories I did not author are intentionally excluded from this page.
-
-## Tools I work with
-
-`Go` · `Rust` · `Lean 4` · `Python` · `TypeScript`
-
-## Background
-
-I study Mathematical Engineering at Istanbul Technical University. Outside software: jazz drums, mathematics, film, and philosophy.
-
-📫 yagizkaterli@gmail.com · [LinkedIn](https://www.linkedin.com/in/yagizkaterli)
+Contact: see `author` fields in the repos. Everything above is backed by a receipt in the corresponding repo's coordination tree.
