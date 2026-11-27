@@ -2,7 +2,7 @@
 
 ## Result
 
-- **Lobi** — A desktop workspace for commits, inbox status, and member heartbeats. Its production companion generated a verified 53-second pull-request walkthrough.
+- **Lobi · System Architect** — Designed the end-to-end collaboration architecture for separate workstreams, owner-approved proposals, and traceability through execution. The implementation team shipped the desktop roster and message composer.
 - **Kolonid** — In a live local-process failure test, 60 of 60 tasks completed after one requeue with zero duplicate effects.
 - **CapsuleGrep** — A Rust semantic-search service returned successful HTTP responses across baseline, cascade, and budget-limited searches.
 - **IDEA** — The Python CLI ships discovery, graph, and validation commands with a committed test suite.
@@ -13,4 +13,4 @@
 
 ## Intent
 
-Build agent infrastructure that takes a project from intent to reviewable work, with explicit ownership and evidence at each handoff.
+Design agent systems that take a project from intent to reviewable work, with explicit ownership and evidence at each handoff.
